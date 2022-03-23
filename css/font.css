@@ -1,0 +1,207 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+.jejumyeongjo * {
+  font-family: "Jeju Myeongjo", serif;
+}
+
+@font-face {
+  font-family: "ChosunSm";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+.nanumbarungothic * {
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+html {
+  font-family: "ChosunSm";
+
+  font-size: 15px;
+}
+
+header > .banner-wrap > .top p {
+  font-family: "NanumBarunGothic", sans-serif;
+  font-size: 0.8rem;
+}
+
+header > nav {
+  font-size: 1.2rem;
+}
+
+header > nav > ul.menu > li.search > form > input::placeholder {
+  font-family: "ChosunSm";
+
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+/* main */
+
+#home-main p {
+  font-family: "NanumBarunGothic", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+#home-main .perfume p {
+  color: black;
+}
+
+/* footer */
+footer > .sec1 > .sec1-l > p.title {
+  font-size: 1.2rem;
+}
+
+footer > .sec1 > .sec1-l > h3 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+footer > .sec1 > .sec1-l i {
+  font-size: 0.8rem;
+}
+
+footer > .sec1 > .sec1-r > ul > li p {
+  font-size: 1.2rem;
+}
+
+footer > .sec1 > .sec1-r > ul > li > ul {
+  font-family: "NanumBarunGothic", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+footer > .sec1 > .sec1-r > ul > li > ul.social {
+  font-family: "ChosunSm";
+}
+
+footer > .sec2 {
+  font-size: 0.7rem;
+  color: #aaa;
+  line-height: 0.4rem;
+}
+
+/* banner1 */
+
+#banner1-main {
+  font-family: "NanumBarunGothic", sans-serif;
+  line-height: 2rem;
+}
+
+#banner1-main p.title {
+  font-size: 1.3rem;
+}
+
+/* banner2 */
+#banner2-main {
+  font-family: "NanumBarunGothic", sans-serif;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+
+#banner2-main .title,
+.notice {
+  font-size: 1rem;
+}
+
+#banner2-main .date {
+  font-size: 0.8rem;
+}
+
+#banner2-main .bold {
+  font-weight: bold;
+}
+
+#banner2-main th {
+  font-size: 0.7rem;
+}
+
+#banner2-main td {
+  font-size: 0.6rem;
+}
+
+/* our story */
+#ourstory-main {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+#ourstory-main .title {
+  font-family: "ChosunSm";
+  font-size: 1.3rem;
+  margin-top: 50px;
+}
+
+/* stores */
+#stores-main .slick-arrow::before {
+  font-family: "NanumBarunGothic", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+#stores-main > .title {
+  font-size: 1.2rem;
+}
+
+#stores-main > ul {
+  font-family: "NanumBarunGothic", sans-serif;
+  font-size: 0.9rem;
+}
+
+#stores-main > ul > li > p {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+/* contact */
+#contact-main > p {
+  font-size: 1.2rem;
+}
+
+#contact-main > .content-box > p {
+  font-size: 0.8rem;
+  font-family: "NanumBarunGothic", sans-serif;
+  line-height: 1.2rem;
+}
+
+#contact-main > .content-box > p.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 870px) {
+  html {
+    font-size: 13px;
+  }
+
+  /* our story */
+
+  #ourstory-main .title {
+    font-family: "ChosunSm";
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}

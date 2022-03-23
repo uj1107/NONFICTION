@@ -1,0 +1,300 @@
+.logo-wrap {
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#logo {
+  width: 100%;
+}
+
+/* main에서만 상단 하프로고 안 보이게. */
+header > nav {
+  height: 0;
+}
+
+/* main */
+
+.main {
+  width: 100%;
+  height: 6550px;
+  padding-top: 150px;
+  position: relative;
+}
+
+.main > div {
+  position: absolute;
+}
+
+.main a {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.main p {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main > .bodycare {
+  width: 808.3px;
+  height: 1056.49px;
+}
+
+.main > .bodycare > a {
+  background-image: url(../image/body.jpg);
+}
+
+.main > .handcare1 {
+  width: 308px;
+  height: 410px;
+  left: 150px;
+  top: 1450px;
+}
+
+.main > .handcare1 > a {
+  background-image: url(../image/hand1.jpg);
+}
+
+.main > .handcare2 {
+  width: 616px;
+  height: 730px;
+  right: 120px;
+  top: 1300px;
+}
+
+.main > .handcare2 > a {
+  background-image: url(../image/hand2.jpg);
+}
+
+.main > .perfume {
+  width: 770px;
+  height: 954px;
+  top: 2250px;
+}
+
+.main > .perfume > a {
+  background-image: url(../image/perfume.jpg);
+}
+
+.main > .shopAll {
+  width: 800px;
+  height: 1068px;
+  top: 3450px;
+}
+
+.main > .shopAll > a {
+  background-image: url(../image/shopall.jpg);
+}
+
+.main > .handcare3 {
+  width: 308px;
+  height: 392px;
+  left: 150px;
+  top: 4950px;
+}
+
+.main > .handcare3 > a {
+  background-image: url(../image/hand3.jpeg);
+}
+
+.main > .handcare4 {
+  width: 770px;
+  height: 962px;
+  top: 4650px;
+  right: 0;
+}
+
+.main > .handcare4 > a {
+  background-image: url(../image/hand4.jpg);
+}
+
+.main > .lipcare {
+  width: 616px;
+  height: 770px;
+  top: 5800px;
+}
+
+.main > .lipcare > a {
+  background-image: url(../image/lip.jpg);
+}
+
+/* 사진 hover blur */
+.main > div:hover a {
+  filter: blur(6px);
+  transition: 0.5s;
+}
+
+.main a:not(:hover) {
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 870px) {
+  .logo-wrap {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* main */
+
+  .main {
+    max-height: 3350px;
+  }
+
+  .main p {
+    bottom: 20px;
+  }
+
+  .main > .bodycare {
+    width: 404px;
+    height: 528px;
+  }
+
+  .main > .handcare1 {
+    width: 154px;
+    height: 205px;
+    left: 100px;
+    top: 850px;
+  }
+
+  .main > .handcare2 {
+    width: 308px;
+    height: 365px;
+    right: 80px;
+    top: 750px;
+  }
+
+  .main > .perfume {
+    width: 385px;
+    height: 477px;
+    top: 1200px;
+  }
+
+  .main > .shopAll {
+    width: 400px;
+    height: 534px;
+    top: 1800px;
+  }
+
+  .main > .handcare3 {
+    width: 154px;
+    height: 196px;
+    left: 100px;
+    top: 2600px;
+  }
+
+  .main > .handcare4 {
+    width: 385px;
+    height: 481px;
+    top: 2450px;
+  }
+
+  .main > .lipcare {
+    width: 369px;
+    height: 462px;
+    top: 3000px;
+  }
+
+  /* 사진 hover blur */
+  .main > div:hover a {
+    filter: blur(6px);
+    transition: 0.5s;
+  }
+
+  .main a:not(:hover) {
+    filter: blur(0);
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* main */
+
+  .main {
+    max-height: 3000px;
+  }
+
+  .main p {
+    bottom: 20px;
+  }
+
+  .main > .bodycare {
+    width: 363px;
+    height: 475px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main > .handcare1 {
+    display: none;
+  }
+
+  .main > .handcare2 {
+    width: 308px;
+    height: 365px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 700px;
+  }
+
+  .main > .perfume {
+    width: 100%;
+    top: 1150px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .main > .shopAll {
+    width: 320px;
+    height: 427px;
+    top: 1700px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .main > .handcare3 {
+    display: none;
+  }
+
+  .main > .handcare4 {
+    width: 308px;
+    height: 384px;
+    top: 2200px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .main > .lipcare {
+    width: 332px;
+    height: 415px;
+    top: 2650px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  /* 사진 hover blur */
+  .main > div:hover a {
+    filter: blur(6px);
+    transition: 0.5s;
+  }
+
+  .main a:not(:hover) {
+    filter: blur(0);
+    transition: 0.5s;
+  }
+}

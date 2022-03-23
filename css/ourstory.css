@@ -1,0 +1,109 @@
+.clearfix {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.main {
+  width: 850px;
+  max-height: 5000px;
+  margin: 0 auto;
+  padding-top: 250px;
+  position: relative;
+  margin-bottom: 300px;
+}
+
+.main > .box {
+  width: 100%;
+}
+
+.main > .box > img {
+  margin-bottom: 100px;
+}
+
+.main .col6 {
+  width: 60%;
+}
+
+.main .col4 {
+  width: 40%;
+}
+
+.main .float-r {
+  float: right;
+}
+
+.main > .box > .content {
+  box-sizing: border-box;
+  padding-right: 25px;
+  padding-left: 0;
+  display: inline-block;
+}
+
+#mobile {
+  display: none;
+}
+
+.main > .box > .p-l {
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+.main > .box > .content .center {
+  text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+  .main {
+    width: 600px;
+    max-height: 5000px;
+    margin-bottom: 300px;
+  }
+
+  .main > .content {
+    padding-right: 15px;
+    padding-left: 0;
+  }
+
+  .main .p-l {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    width: 300px;
+    padding-top: 200px;
+    margin-bottom: 50px;
+  }
+
+  .main > .box > img {
+    margin-bottom: 0px;
+  }
+
+  .main > .box > .p-l {
+    padding-left: 0;
+  }
+
+  .main .col6 {
+    width: 100%;
+  }
+
+  .main .col4 {
+    width: 100%;
+  }
+
+  .main > .box > .content {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .main > .box > .con-none {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+}

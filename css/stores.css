@@ -1,0 +1,161 @@
+.main {
+  width: 850px;
+  max-height: 5000px;
+  margin: 0 auto;
+  padding-top: 200px;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.slider {
+  width: 100%;
+  height: 650px;
+}
+
+.slider .slide {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider .slide1 {
+  background-image: url(../image/slide1.jpg);
+}
+.slider .slide2 {
+  background-image: url(../image/slide2.jpg);
+}
+.slider .slide3 {
+  background-image: url(../image/slide3.jpg);
+}
+
+.slick-arrow {
+  display: inline-block;
+  z-index: 50;
+  top: calc(600px + 1.5rem);
+  transform: translate(0%, 0%);
+}
+
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 12px;
+}
+
+.slick-arrow::before {
+  color: black;
+}
+
+.slick-prev::before {
+  content: "Prev";
+}
+
+.slick-next::before {
+  content: "Next";
+}
+
+#stores-main hr {
+  border: 0;
+  height: 1px;
+  margin-top: 10px;
+}
+
+#stores-main > .title {
+  text-align: center;
+}
+
+#stores-main > ul {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#stores-main > ul > li {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+#stores-main > ul > li > p {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 870px) {
+  .main {
+    width: 600px;
+    margin-bottom: 100px;
+  }
+
+  .slider {
+    height: 450px;
+  }
+
+  .slider .slide {
+    height: 400px;
+  }
+
+  .slick-arrow {
+    display: inline-block;
+    z-index: 50;
+    top: calc(400px + 1.5rem);
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+
+  .slider {
+    height: 300px;
+  }
+
+  .slider .slide {
+    height: 250px;
+  }
+
+  .slick-arrow {
+    top: calc(250px + 1rem);
+  }
+
+  #stores-main > .title {
+    text-align: left;
+    font-weight: bolder;
+  }
+
+  #stores-main hr {
+    margin-top: 0px;
+  }
+
+  #stores-main > ul {
+    padding-left: 0;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  #stores-main > ul > li {
+    flex-shrink: 0;
+    flex-basis: 50%;
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 5px;
+  }
+
+  #stores-main > ul > li > p {
+    padding-top: 15px;
+  }
+
+  #none {
+    display: none;
+  }
+
+  #stores-main > #mobile {
+    padding-bottom: 0;
+  }
+}

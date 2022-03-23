@@ -1,0 +1,61 @@
+.main {
+  width: 800px;
+  max-height: 5000px;
+  margin: 0 auto;
+  padding-top: 250px;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.main > .notice {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main > .title {
+  display: inline-block;
+}
+
+.main > .date {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.main > .content {
+  margin-top: 50px;
+}
+
+.main > table {
+  width: 250px;
+  border-collapse: collapse;
+  border: 1px black solid;
+  margin-bottom: 50px;
+}
+
+.main > table th {
+  border: 1px black solid;
+}
+
+.main > table td {
+  border: 1px black solid;
+}
+
+.main > table td.center {
+  text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+  .main {
+    width: 90%;
+    padding-top: 200px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding-top: 180px;
+    margin-bottom: 50px;
+  }
+}
